@@ -46,7 +46,7 @@ public class MobilePhone {
 
     public void editContact(String name, String newName, int newNumber) {
         if (findeContactPosName(name) >= 0) {
-            contactsBook.set(findeContactPosName(name), new Contacts(newName, newNumber));
+            contactsBook.set(findeContactPosName(name), Contacts.createContact(newName,newNumber));
         }
     }
 

@@ -23,4 +23,8 @@ public class Contacts {
     public String toString() {
         return "Name: " + getName() + ", phone number: " + getNumber() + "";
     }
+
+    public static Contacts createContact(String name, int contactNumber){
+        return new Contacts(name,contactNumber);
+    }
 }
